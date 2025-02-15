@@ -5,7 +5,7 @@ using EShopBE.Graphql;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
-services.AddGraphQLServer().AddQueryType<FirstQuery>();
+services.AddGraphQLServer().AddGraphqlService(services);
 
 services.AddProgramInstaller(builder.Configuration);
 var app = builder.Build();
@@ -15,11 +15,6 @@ app.UseEndpoints(static endpoints =>
     _ = endpoints.MapGraphQL();
 }
 );
-
-
-
-
-
 
 app.SeedData();
 app.Run();
