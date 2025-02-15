@@ -5,3 +5,7 @@
 /.vs/EShopBE
 /EShopBE/obj
 /EShopBE/bin
+/EShopBE.Domain/bin
+/EShopBE.Domain/obj
+/EShopBE.Models/bin
+/EShopBE.Models/obj
